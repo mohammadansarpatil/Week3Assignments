@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+    var a=70;
+    var b=20;
+    var c=3;
+    if(a%5==0 && a%6==0)
+    document.write(a + " is divisible by 5 and 6 <br/> ")
+    else
+    document.write(a + " is not divisible by 5 and 6 <br/> ")
+
+    if(b%5==0 && b%6==0)
+    document.write(b + " is divisible by 5 and 6 <br/> ")
+    else
+    document.write(b + " is not divisible by 5 and 6 <br/> ")
+
+    if(a>b && a>c)
+    document.write(a + "is the largest number <br/> ")
+    else if(b>a && b>c)
+    document.write(b + "is the largest number <br/>")
+    else
+    document.write(c+"is the largest number <br/>")
+
+    var sum=a+b+c;
+    if(a>25 && b>15 && c>10 && sum>65)
+    document.write("Trainee Cleared the exam <br/> ");
+    else
+    document.write("Trainee Failed the exam <br/> ")
+
+    var num=100;
+    var str="100";
+
+    if(num===str){
+    document.write("<h1> Equal</h1><br/>");
+    }
+    else{
+    document.write("<h1> Not Equal</h1><br/>");
+    }
+
+    var sw='a';
+
+    switch(sw){
+        case 'a': 
+        document.write("Vowel " + sw + "<br/>")
+        break;
+        case 'e': 
+        document.write("Vowel " + sw + "<br/>")
+        break;
+        case 'i': 
+        document.write("Vowel " + sw + "<br/>")
+        break;
+        case 'o': 
+        document.write("Vowel " + sw + "<br/>")
+        break;
+        case 'u': 
+        document.write("Vowel " + sw + "<br/>")
+        break;
+        default: 
+        document.write("Not a Vowel <br/>")
+    }
+
+    for(var i=1;i<=10;i++)
+    document.write(i + "<br/>")
+
+
+    var table = 9;
+var length = 10;
+var i = 1;
+
+document.write("Multiplication table: "+ table);
+while(i <= length)
+{ 
+ document.write("<br>"+i+" * "+table+" = " +(i * table));
+ i++;
+}
+
+
+</script>
+
+
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Multiplication Table</h3>
+  
+    
+</body>
+</html>
