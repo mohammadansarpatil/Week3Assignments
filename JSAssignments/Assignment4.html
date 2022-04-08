@@ -9,20 +9,89 @@
     <script language="JavaScript">
         function addFun(num1,num2)
         {
-        document.write("the sum is "+ (num1+num2));
+        document.write("the sum is "+ (num1+num2)+ "<br>");
         }
         addFun(10,20);
 
         function mulFun(num1,num2){
-            document.write("the product is " + (num1*num2))
+            document.write("the product is " + (num1*num2) + "<br>")
         }
         mulFun(30,30)
+
+        var ans=1
+        function power(num1 , num2){
+            for(var i=1;i<=num2;i++)
+            { 
+                ans=ans*num1
+            }
+            return ans
+        }
+        document.write("Power of " + power(3,6))
+
+        function dispStr()
+        {
+        for(i=0;i<arguments.length;i++)
+        {
+        document.write(arguments[i]+" ");
+        }
+        }
+        document.write("<br>");
+        dispStr("1one","1two","1three"); 
+        document.write("<br>");
+        dispStr("2one","2two","2three","2four","2five");
+
+
+        function average(){
+            var sum=0
+            for(var i=0;i<arguments.length;i++)
+                sum=sum+arguments[i]
+            return sum/arguments.length
+        }
+        document.write("Average of " + average(1,2,3,4,5,6,7,8,9,10))
+
+        function dispMsg()
+        {
+
+        num1=parseInt(prompt("enter the first number","0"));
+        num2=parseInt(prompt("enter the second number"));
+         alert("Sum is \n"+(num1+num2));
+        }
+
+        dispMsg()
+
+        function closeWin()
+        {
+        res=confirm("do you want to close the window?"); 
+        if(res==true) 
+        window.close();
+        }
+        closeWin()
+
+
         </script>
 
 
     <title>Document</title>
 </head>
 <body>
+<!--
+    <table>
+        <thead>
+            <tr>X</tr>
+            <tr>Y</tr>
+            <tr>X*Y</tr>
+        </thead>
+        <tbody>
+            <%for(var i=1;i<10;i++){%>
+                <tr>
+                    <td>3</td>
+                    <td><%i%></td>
+                    <td>  <% 3*i%>  </td>
+                </tr>
+           <% } %>
+        </tbody>
+    </table>
+-->
     
 </body>
 </html>
